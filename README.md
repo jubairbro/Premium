@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Premium VPS Script - JubairBro</title>
+  <h1>Premium VPS Script - JubairBro</h1>
 </head>
 <body style="font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px;">
 
-  <h1>🛡️ Premium VPS Setup Script – by JubairBro</h1>
+  <h1>🛡️ Premium VPS Setup Script – by Jubairz</h1>
 
   <p>Welcome to the official <strong>Premium Script</strong> built for powerful and professional VPS setups.</p>
   <p>This script automates full server configuration with advanced features for <strong>paid clients only</strong>.</p>
