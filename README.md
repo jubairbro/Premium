@@ -6,7 +6,7 @@
 </head>
 <body style="font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px;">
 
-  <h1>🛡️ Premium VPS Setup Script – by Jubairz</h1>
+ <b> <h2>🛡️ Premium VPS Setup Script – by Jubairz</h2></b>
 
   <p>Welcome to the official <strong>Premium Script</strong> built for powerful and professional VPS setups.</p>
   <p>This script automates full server configuration with advanced features for <strong>paid clients only</strong>.</p>
