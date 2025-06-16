@@ -32,6 +32,9 @@ wget -O setup https://raw.githubusercontent.com/jubairbro/Faw/main/setup && \
 chmod +x setup && \
 ./setup```
 
+
+---
+## 
 > 🟢 Compatible with Ubuntu & Debian (Recommended: Ubuntu 20.04/22.04)
 🔐 Requires approval for full feature access
 
