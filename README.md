@@ -41,7 +41,7 @@ chmod +x setup && \
   </code></pre>
 
   <p>✅ <strong>Tested on:</strong> Ubuntu 20.04 / 22.04, Debian</p>
-  <p>🔐 <strong>Note:</strong> Approval required for unlocking premium features.</p>
+  <p>🔐 <strong>Note:</strong> Approval required for unlocking premium script</p>
 
   <hr />
 
