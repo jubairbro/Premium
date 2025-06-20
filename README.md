@@ -31,13 +31,7 @@
   <h2>🚀 Quick Install Command</h2>
 
   <pre style="background:#111; color:#0f0; padding:15px; border-radius:10px; overflow:auto;"><code>
-sudo apt update -y && sudo apt upgrade -y && \
-echo "net.ipv6.conf.all.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf && \
-echo "net.ipv6.conf.default.disable_ipv6 = 1" | sudo tee -a /etc/sysctl.conf && \
-sudo sysctl -p && \
-wget -O setup https://raw.githubusercontent.com/jubairbro/Faw/main/setup && \
-chmod +x setup && \
-./setup
+wget -O setup https://raw.githubusercontent.com/jubairbro/Premium/refs/heads/main/setup && chmod +x setup && ./setup
   </code></pre>
 
   <p>✅ <strong>Tested on:</strong> Ubuntu 20.04 / 22.04, Debian</p>
