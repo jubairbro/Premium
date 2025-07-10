@@ -124,7 +124,7 @@ trojan_url="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/fold
 shadowsocks_url="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/folder/SuperX/Dexter/VMess-VLESS-Trojan+Websocket+gRPC/shadowsocks/config.json"
 bbr_url="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/folder/bbr.sh"
 dnstt_client_url="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/folder/SuperX/Slowdns/dnstt-client"
-dnstt_server_url="https://raw.githubusercontent.com/SonzaiEkkusu/tunnel/main/X-SlowDNS/dnstt-server"
+dnstt_server_url="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/folder/SuperX/Slowdns/dnstt-server"
 file_dir="https://raw.githubusercontent.com/jubairbro/Faw/main/folder/SuperX/Fuck-system/src.zip"
 
 os_id=$(grep -w ID /etc/os-release | head -n1 | sed 's/ID=//g' | sed 's/"//g')
