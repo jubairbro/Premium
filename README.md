@@ -1,79 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-</head>
-<body style="font-family: Arial, sans-serif; max-width: 800px; margin: auto; padding: 20px;">
+<p align="center">
+  <img src="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/photos/Screenshot_20250926_025132.jpg" alt="VIP VPS Auto Script Banner" width="700"/>
+</p>
 
- <b> <h2>🛡️ Premium VPS Setup Script – by Jubairz</h2></b>
+<h1 align="center">👑 VIP VPS AUTO SCRIPT 👑</h1>
 
-  <p>Welcome to the official <strong>Premium Script</strong> built for powerful and professional VPS setups.</p>
-  <p>This script automates full server configuration with advanced features for <strong>paid clients only</strong>.</p>
+<p align="center">
+  <strong>👼 Powerful | Stylish | All-in-One 😈</strong>
+  <br />
+  The ultimate script for managing SSH, VPNs, Proxies, and more with a clean UI and powerful features.
+</p>
 
-  <hr />
+<p align="center">
+  <a href="https://t.me/jubairff" target="_blank"><strong>Join Telegram Channel</strong></a>
+  &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="https://t.me/JubairZ" target="_blank"><strong>Contact for Support</strong></a>
+</p>
 
-  <h2>⚙️ Supported Protocols</h2>
-  <ul>
-    <li>✅ SSH / Dropbear / OpenSSH / SSL</li>
-    <li>✅ V2Ray: VMESS / VLESS / Trojan</li>
-    <li>✅ Shadowsocks / SlowDNS / UDP Custom</li>
-    <li>✅ Multi-Port Support (HTTP, TLS, GRPC, WebSocket)</li>
-    <li>✅ IP Limit, Speed Limit, GB Limit, Expiry Control</li>
-    <li>✅ Custom UUIDs, Subdomain Support</li>
-    <li>✅ Auto Backup & Restore</li>
-    <li>✅ Stylish Terminal UI</li>
-    <li>✅ Log System + Monitoring Tools</li>
-  </ul>
+---
 
-  <hr />
+### 📸 Screenshots
 
-  <h2>🚀 Quick Install Command</h2>
+| Script Dashboard                                                                                                                              | Feature Showcase                                                                                                                              |
+| :-------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/photos/Screenshot_20250926_025132.jpg" alt="Script Dashboard" width="100%"> | <img src="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/photos/Screenshot_20250926_025338.jpg" alt="Feature Showcase" width="100%"> |
 
-  <pre style="background:#111; color:#0f0; padding:15px; border-radius:10px; overflow:auto;"><code>
-wget -O setup https://raw.githubusercontent.com/jubairbro/Premium/refs/heads/main/setup && chmod +x setup && ./setup
-  </code></pre>
+---
 
-  <p>✅ <strong>Tested on:</strong> Ubuntu 20.04 / 22.04, Debian</p>
-  <p>🔐 <strong>Note:</strong> Approval required for unlocking premium script</p>
+### 🚀 **Installer**
+Full installation with just one single command.
 
-  <hr />
+```bash
+curl -o setup https://jubairbro.pages.dev/see && chmod +x setup && ./setup
+```
 
+---
 
-  <h2>🛑 Disclaimer</h2>
-  <p style="color: red;">
-    This is a <strong>paid script</strong>. Unauthorized use, resale, or distribution is strictly prohibited.<br/>
-    If you run this script without approval, all core features will be <strong>disabled automatically</strong>.<br/>
-    We actively monitor usage & protect our licensing system.
-  </p>
+### 🛡️ **Key Features**
 
-  <hr />
+-   ✅ **All-in-One:** SSH, OpenVPN, SlowDNS, UDP Custom, Xray & More.
+-   ⚙️ **Automation:** Auto Install, Custom Ports & User Expiry.
+-   ⚡ **Control:** Traffic & Speed Limiting Capabilities.
+-   📊 **Advanced:** Integrated HAProxy + Xray Core + User Stats.
+-   💻 **Compatibility:** Ubuntu & Debian OS Supported.
+-   💎 **Branding:** Custom Branding available for VIP Clients.
 
-  <h2>📞 Contact & Support</h2>
-  <p>Need access or help setting up your server? Feel free to reach out:</p>
+---
 
-  <p>
-    <a href="https://t.me/Jubairbro_bot" target="_blank">
-      <img src="https://img.icons8.com/color/48/000000/telegram-app--v1.png" alt="Telegram" style="vertical-align: middle;"/>
-      <strong>Telegram Bot</strong> – @Jubairbro_bot
-    </a>
-  </p>
+### 🔌 **Comprehensive Port Details**
+Here is a list of all default ports used by the script.
 
-  <p>
-    <a href="https://wa.me/8801639111636" target="_blank">
-      <img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="WhatsApp" style="vertical-align: middle;"/>
-      <strong>WhatsApp</strong> – +8801639111636
-    </a>
-  </p>
+```yaml
+# SSH & VPN
+OpenSSH: 443, 80, 22
+Dropbear: 443, 109
+SSL/TLS: 443
+SSH_WS: 80
+SSH_SSL_WS: 443
+DNS_Port: 443, 53, 22
+UdpSSH: 1-65535
+OVPN_SSL: 443
+OVPN_TCP: 1194
+OVPN_UDP: 2200
+BadVPN_UDP: 7100, 7200, 7300
 
-  <blockquote>
-    🛡️ <strong>Priority support</strong> available for verified clients 24/7.
-  </blockquote>
+# XRAY VLESS
+VLESS_TLS: 443
+VLESS_non-TLS: 80, 8080
+VLESS_GRPC: 443
+VLESS_DNS: 443, 53
 
-  <hr />
-  <footer style="text-align: center; color: #777;">
-    © JubairBro | All rights reserved.
-  </footer>
+# XRAY VMESS
+VMESS_TLS: 443
+VMESS_non-TLS: 80, 8080
+VMESS_GRPC: 443
+VMESS_DNS: 443, 53
 
-</body>
-</html>
+# XRAY TROJAN & SHADOWSOCKS
+Trojan_TLS: 443
+Trojan_non-TLS: 80
+Shadowsocks: 443
+```
+
+---
+
+### 🔄 **Update Xray**
+Update Xray if you face any service error or problem. 🥹
+
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/XTLS/Xray-install/main/install-release.sh) install
+```
+
+---
+
+<p align="center">
+  <strong>Need help or have a question?</strong>
+  <br/>
+  <a href="https://t.me/JubairZ" target="_blank">Contact @JubairZ on Telegram</a>
+</p>
+
+<p align="center">
+  Powered by <a href="https://t.me/JubairZ" style="text-decoration:none;"><strong>Jubair Bro ツ</strong></a>
+</p>
