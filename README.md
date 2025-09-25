@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/jubairbro/Faw/refs/heads/main/photos/Screenshot_20250926_025132.jpg" alt="VIP VPS Auto Script Banner" width="700"/>
+  <img src="" alt="VIP VPS Auto Script Banner" width="700"/>
 </p>
 
 <h1 align="center">👑 VIP VPS AUTO SCRIPT 👑</h1>
