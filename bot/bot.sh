@@ -21,8 +21,7 @@ print_success() { echo -e "${C_GREEN}[SUCCESS]${C_RESET} $1"; }
 
 # --- Logo ---
 print_logo() {
-cat << "EOF"
-
+echo -e "${C_GREEN}
 ⠀⣠⣶⣿⣿⣶⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣤⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⣿⣿⣿⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠹⢿⣿⣿⡿⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⡏⢀⣀⡀⠀⠀⠀⠀⠀
@@ -39,8 +38,7 @@ cat << "EOF"
 ⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⣼⣿⣿⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠻⣿⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-
-EOF
+${C_RESET}"
 echo -e "${C_GREEN}====================================================${C_RESET}"
 echo -e "${C_GREEN}   Welcome to the Sensi Tunnel Bot Installer!${C_RESET}"
 echo -e "${C_GREEN}====================================================${C_RESET}"
@@ -78,8 +76,8 @@ if [[ "$OS" != "ubuntu" && "$OS" != "debian" ]]; then
     exit 1
 fi
 
-# --- Fix broken packages if any ---
-print_info "Checking and fixing broken packages..."
+# --- Fix broken packages ---
+print_info "Fixing broken packages if any..."
 apt-get update -y
 apt-get --fix-broken install -y
 
@@ -106,8 +104,7 @@ sed -i "s/OWNER_ID = 5487394544/OWNER_ID = ${OWNER_ID}/" "$BOT_SCRIPT"
 
 # --- Create systemd service ---
 SERVICE_FILE="/etc/systemd/system/bot.service"
-cat > "$SERVICE_FILE" <<EOF
-[Unit]
+echo "[Unit]
 Description=Sensi Tunnel Telegram Bot
 After=network.target
 
@@ -119,8 +116,7 @@ Restart=always
 RestartSec=10
 
 [Install]
-WantedBy=multi-user.target
-EOF
+WantedBy=multi-user.target" > "$SERVICE_FILE"
 
 # --- Enable and start service ---
 print_info "Starting bot service..."
