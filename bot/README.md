@@ -4,5 +4,5 @@
 # installer 
 
 ```bash
-bash <(curl -s https://raw.githubusercontent.com/jubairbro/VideoSensi/main/setup.sh)
+bash <(curl -s (https://raw.githubusercontent.com/jubairbro/Premium/refs/heads/main/bot/bot.sh)
 ```
