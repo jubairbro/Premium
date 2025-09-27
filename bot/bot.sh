@@ -31,7 +31,6 @@ print_error() {
 print_success() {
     echo -e "${C_GREEN}[SUCCESS]${C_RESET} $1"
 }
-sudo -i
 # --- Logo ---
 print_logo() {
 cat << "EOF"
